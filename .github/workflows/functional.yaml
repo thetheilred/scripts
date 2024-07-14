@@ -7,3 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: ./password-generator.py --length 10 --count 10 --debug
+  report-ok:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Prelimenary tests passed'
