@@ -1,0 +1,9 @@
+name: test-generate-random-password
+run-name: ${{github.actor}} is checking that random password can be generated
+on: [push]
+jobs:
+  generate-password:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./password-generator.py --lenth 10 --count 10 --debug
