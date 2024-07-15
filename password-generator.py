@@ -1,5 +1,7 @@
 #!/bin/python3
 
+# TODO: Add license
+
 """This script is used for password generation
 usage: password-generator [-h] [-n LENGTH] [--dontUseSpecials] [-v] [-c COUNT]
 options:
