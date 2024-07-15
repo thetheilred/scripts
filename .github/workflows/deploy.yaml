@@ -17,5 +17,6 @@ jobs:
           username: ${{secrets.EXPERIMENT_VM_SSH_USERNAME}}
           password: ${{secrets.EXPERIMENT_VM_SSH_PASSWORD}}
           port: 22
+          overwrite: true
           source: "password-generator.py"
           target: "/opt/scripts"
